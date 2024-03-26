@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en" class="font-poppins">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font awesome CDN start -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font awesome CDN end -->
+  <!-- Google Fonts start -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- Google Fonts end -->
+  <!-- Custom CSS start -->
+  <link rel="stylesheet" href="./css/slick.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Custom CSS end -->
+  <title>MUHIT KHAN | Personal Portfolio</title>
+  <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+</head>
+<title>MUHIT KHAN | Personal Portfolio</title>
+</head>
+
+<body class="bg-image-light dark:bg-image-dark bg-center bg-cover bg-no-repeat bg-fixed">
+  <!-- Navbar part start -->
+  <nav class="py-5 lg:py-7 bg-gray-100 dark:bg-black lg:bg-transparent">
+    <div class="container grid grid-cols-[auto_1fr] justify-between items-center">
+      <div>
+        <a href="#">
+          <img src="./images/MK_Logo.png" alt="&lt;MUHIT KHAN&gt;" style="max-height: 50px;" />
+        </a>
+      </div>
+      <div class="text-right flex items-center justify-end gap-3">
+        <span
+          class="inline-flex items-center justify-center darkmode w-10 h-10 rounded-full cursor-pointer bg-slate-100 hover:bg-primary hover:text-slate-50 text-2xl">
+          <svg class="light_icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+            stroke-linecap="round" stroke-linejoin="round" class="text-3xl dark-mode-light dark:hidden" height="1em"
+            width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Dark icon -->
+          <svg class="dark_icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+            stroke-linecap="round" stroke-linejoin="round"
+            class="text-2xl dark-mode-dark hidden fill-jacarta-700 group-hover:fill-white group-focus:fill-white dark:block dark:fill-white"
+            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </span>
+        <span
+          class="bars lg:hidden w-10 h-10 rounded-full bg-primary text-slate-50 inline-flex items-center justify-center cursor-pointer">
+          <i class="fas fa-bars"></i>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <!-- Side menu start -->
+  <div class="side_menu bg-slate-50 dark:bg-mid-dark rounded-b-2xl py-6 px-4 hidden">
+    <ul class="grid grid-cols-1 gap-2">
+      <li>
+        <a href="#"
+          class="block p-2 text-slate-900 rounded-md hover:text-slate-50 hover:hover_active dark:text-slate-100 active">
+          <i class="fa-solid fa-house"></i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#"
+          class="block p-2 rounded-md text-slate-900 hover:text-slate-50 hover:hover_active dark:text-slate-100"><i
+            class="fa-regular fa-file-lines"></i> Resume</a>
+      </li>
+      <li>
+        <a href="#"
+          class="block p-2 rounded-md text-slate-900 hover:text-slate-50 hover:hover_active dark:text-slate-100">
+          <i class="fa-brands fa-hive"></i>
+          Works
+        </a>
+      </li>
+      <li>
+        <a href="https://blog.muhitkhan.tech" target="_blank"
+          class="block p-2 rounded-md text-slate-900 hover:text-slate-50 hover:hover_active dark:text-slate-100">
+          <i class="fa-brands fa-hashnode"></i>
+          Blogs
+        </a>
+      </li>
+      <li>
+        <a href="#"
+          class="block p-2 rounded-md text-slate-900 hover:text-slate-50 hover:hover_active dark:text-slate-100">
+          <i class="fa-regular fa-address-book"></i>
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- Side menu end -->
+  <!-- Navbar part end -->
+
+  <!-- Side bar start -->
+  <main>
+    <section class="main_section mt-40">
+      <div class="container grid grid-cols-12 lg:gap-10">
+        <!-- Sidebar start -->
+        <div class="Home_info col-span-12 lg:col-span-4">
+          <div class="bg-slate-100 dark:bg-[#111111] rounded-2xl mt-10 lg:mb-10 py-10 md:sticky top-40 left-0">
+            <div class="overflow-hidden rounded-lg -mt-48 text-center w-60 h-60 m-auto">
+              <img src="./images/profile.jpg" alt="Profile image" />
+            </div>
+            <div class="text-center">
+              <h2 class="mt-6 mb-1 text-4xl font-semibold dark:text-white">
+                MUHIT KHAN
+              </h2>
+              <h1 class="mb-4 text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]">
+                CSE Undergraduate
+              </h1>
+            </div>
+            <div class="flex justify-center space-x-3">
+              <a href="https://www.facebook.com/muhitkhan_bd" target="_blank"
+                class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#1773EA] hover:text-slate-50">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/muhit_bd" target="_blank"
+                class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#1C9CEA] hover:text-slate-50">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href=" https://www.muhitkhan.tech"
+                class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#e14a84] hover:text-slate-50">
+                <i class="fa-solid fa-globe"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/muhit-khan/"
+                class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#0072b1] hover:text-slate-50">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+            <ul class="flex flex-col bg-light-gray dark:bg-mid-dark px-7 py-8 rounded-2xl mt-10">
+              <li class="flex items-center gap-6 border-b border-slate-300 py-3">
+                <div
+                  class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-[#111111] hover:hover_active group cursor-pointer">
+                  <i class="fa-solid fa-mobile-screen text-pink-600 text-2xl group-hover:text-slate-50"></i>
+                </div>
+                <div class="flex flex-col dark:text-white">
+                  <span class="text-slate-500 text-xs font-bold">Phone</span>
+                  <a class="transition-all duration-100 hover:text-primary" href="tel:+8801632436671">+880 16324
+                    36671</a>
+                </div>
+              </li>
+              <li class="flex items-center gap-6 border-b border-slate-300 py-3">
+                <div
+                  class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-black text-[#6AB5B9] hover:hover_active group cursor-pointer text-xl">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="flex flex-col dark:text-white">
+                  <span class="text-slate-500 text-xs font-bold">Location</span>
+                  <span class="transition-all duration-100">Dhaka, Bangladesh</span>
+                </div>
+              </li>
+              <li class="flex items-center gap-6 border-b border-slate-300 py-3">
+                <div
+                  class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-black text-[#FD7590] hover:hover_active group cursor-pointer text-xl">
+                  <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+                <div class="flex flex-col dark:text-white">
+                  <span class="text-slate-500 text-xs font-bold">Email</span>
+                  <a class="transition-all duration-100 hover:text-primary"
+                    href="mailto:muhit.dev@gmail.com">muhit.dev@gmail.com</a>
+                </div>
+              </li>
+              <li class="flex items-center gap-6 py-3">
+                <div
+                  class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-black text-[#C17CEB] hover:hover_active group cursor-pointer text-xl">
+                  <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <div class="flex flex-col dark:text-white">
+                  <span class="text-slate-500 text-xs font-bold">Birthday</span>
+                  <span class="transition-all duration-100 ">June 25, 2002</span>
+                </div>
+              </li>
+            </ul>
+            <div class="text-center mt-10">
+              <a href="/assets/muhit_cv.pdf"
+                class="inline-block rounded-[60px] bg-gradient-to-r from-[#FA5252] to-[#DD2476] py-3 px-6 text-slate-50">
+                <i class="fa-solid fa-download"></i>
+                Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar end -->
+
+        <div class="col-span-12 lg:col-span-8 rounded-2xl">
+          <!-- Menu start -->
+          <div class="text-right -mt-10 hidden lg:block">
+            <ul class="md:inline-flex gap-4 py-6 px-10 rounded-3xl bg-slate-50 dark:bg-black menu">
+              <li>
+                <a href="#"
+                  class="text-slate-900 w-20 hover:text-slate-50 text-1xl py-4 rounded-xl flex items-center flex-col justify-center hover:hover_active bg-light-gray dark:bg-mid-dark dark:text-slate-100 active">
+                  <i class="fa-solid fa-house"></i>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="text-slate-900 w-20 hover:text-slate-50 text-1xl py-4 rounded-xl flex items-center flex-col justify-center bg-light-gray dark:bg-mid-dark dark:text-slate-100 hover:hover_active">
+                  <i class="fa-regular fa-file-lines"></i>
+                  Resume
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="text-slate-900 w-20 hover:text-slate-50 text-1xl py-4 rounded-xl flex items-center flex-col justify-center bg-light-gray dark:bg-mid-dark dark:text-slate-100 hover:hover_active">
+                  <i class="fa-brands fa-hive"></i>
+                  Works
+                </a>
+              </li>
+              <li>
+                <a href="https://blog.muhitkhan.tech" target="_blank"
+                  class="text-slate-900 w-20 hover:text-slate-50 text-1xl py-4 rounded-xl flex items-center flex-col justify-center bg-light-gray dark:bg-mid-dark dark:text-slate-100 hover:hover_active">
+                  <i class="fa-brands fa-hashnode"></i>
+                  Blogs
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="text-slate-900 w-20 hover:text-slate-50 text-1xl py-4 rounded-xl flex items-center flex-col justify-center bg-light-gray dark:bg-mid-dark dark:text-slate-100 hover:hover_active">
+                  <i class="fa-regular fa-address-book"></i>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Menu end -->
+
+          <!-- Home tab start -->
+          <div class="tab_item bg-slate-50 dark:bg-[#111111] rounded-xl mb-14">
+            <div class="pt-16 px-12 mt-8">
+              <div>
+                <style>
+                  .text-justify {
+                    text-align: justify;
+                  }
+                </style>
+                <h2
+                  class="text-4xl text-slate-900 font-roboto-slab dark:text-slate-50 font-bold relative after:contents[] after:w-36 after:h-[2px] after:bg-primary after:absolute after:top-1/2 -translate-y-1/2 after:right-8 after:left-52">
+                  About Me
+                </h2>
+                <p class="text-justify text-gray-700 dark:text-slate-500 leading-7 font-medium">
+                  I am a passionate and highly motivated Computer Science Engineering student currently at final year.
+                  <br><br>
+                  As a dedicated programmer and lifelong learner, I have a sharp attention to detail and am skilled at
+                  finding efficient solutions to daily-life coding issues. I love working in fast-paced environments and
+                  collaborating with others to achieve common goals. My curious nature and commitment to excellence
+                  drive me to explore the latest tech trends and tackle complex coding projects. If you're looking for a
+                  creative, energetic, and highly motivated programmer who is always eager to learn and evolve, then I
+                  am your perfect fit!
+                </p>
+                <h3 class="text-4xl text-slate-900 dark:text-slate-50 font-semibold pt-6 pb-4">
+                  What I do!
+                </h3>
+              </div>
+              <div class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
+                <div class="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5">
+                  <div>
+                    <img class="w-28" src="./images/icons/webdev.svg" alt="WEB" />
+                  </div>
+                  <div>
+                    <h4 class="dark:text-white text-xl font-semibold">
+                      Web Development
+                    </h4>
+                    <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                      Unleash your online potential with my hand-crafted websites. Let me and my team develop stunning
+                      platforms that leave a lasting impression and bring your vision to life!
+                    </p>
+                  </div>
+                </div>
+                <div class="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5">
+                  <div>
+                    <img class="w-28" src="./images/icons/appdev.svg" alt="APP" />
+                  </div>
+                  <div>
+                    <h4 class="dark:text-white text-xl font-semibold">
+                      App Development
+                    </h4>
+                    <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                      Elevate your brand with innovative Flutter Android apps, blending advanced tech and artistic
+                      design for seamless user experiences that engage your audience.
+                    </p>
+                  </div>
+                </div>
+                <div class="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5">
+                  <div>
+                    <img class="w-28" src="./images/icons/analytics.svg" alt="icon-1" />
+                  </div>
+                  <div>
+                    <h4 class="dark:text-white text-xl font-semibold">
+                      Data Analysis
+                    </h4>
+                    <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                      Worried about your data? Let me help you analyze and interpret your data to make informed decision
+                      for your business.
+                    </p>
+                  </div>
+                </div>
+                <div class="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5">
+                  <div>
+                    <img class="w-28" src="./images/icons/ml.svg" alt="icon-3" />
+                  </div>
+                  <div>
+                    <h4 class="dark:text-white text-xl font-semibold">
+                      Machine Learning
+                    </h4>
+                    <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                      If you are stuck at anywhere in your AI/ML project, consider me as your copilot.
+                    </p>
+                  </div>
+                </div>
+                <div class="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5">
+                  <div>
+                    <img class="w-28" src="./images/icons/consultate.svg" alt="icon-4" />
+                  </div>
+                  <div>
+                    <h4 class="dark:text-white text-xl font-semibold">
+                      Consultancy
+                    </h4>
+                    <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                      Feel free to ask me anything about your IT project. Let me shed some lights on your way to
+                      complete any project.
+                    </p>
+                  </div>
+                </div>
+                <div class="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5">
+                  <div>
+                    <img class="w-28" src="./images/icons/event.svg" alt="icon-5" />
+                  </div>
+                  <div>
+                    <h4 class="dark:text-white text-xl font-semibold">
+                      Event Management
+                    </h4>
+                    <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                      Do you have any occasion to celebrate? Let my team manage your event to make it memorable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-4xl text-slate-900 dark:text-slate-50 font-semibold pt-6 pb-4">
+                  My Client!
+                </h3>
+                <div class="brand_slider py-6 px-6 rounded-xl dark:bg-black">
+                  <div class="slide_item py-4 px-8 rounded-md">
+                    <img src="./images/slide-item-1.png" alt="image" />
+                  </div>
+                  <div class="slide_item py-4 px-8 rounded-md">
+                    <img src="./images/slide-item-2.png" alt="image" />
+                  </div>
+                  <div class="slide_item py-4 px-8 rounded-md">
+                    <img src="./images/slide-item-3.png" alt="image" />
+                  </div>
+                  <div class="slide_item py-4 px-8 rounded-md">
+                    <img src="./images/slide-item-4.png" alt="image" />
+                  </div>
+                  <div class="slide_item py-4 px-8 rounded-md">
+                    <img src="./images/slide-item-1.png" alt="image" />
+                  </div>
+                  <div class="slide_item py-4 px-8 rounded-md">
+                    <img src="./images/slide-item-2.png" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dark:bg-black p-6 text-center mt-8 rounded-br-xl rounded-bl-xl">
+              <p class="text-slate-800 dark:text-slate-50">
+                &#169; <span id="year"></span> All Rights Reserved by
+                MUHIT KHAN
+              </p>
+            </div>
+          </div>
+          <!-- Home tab end ---->
+
+          <!-- Resume tab start -->
+          <div class="tab_item hidden bg-slate-50 dark:bg-[#111111] rounded-xl mb-14">
+            <div class="pt-16 px-12 mt-8">
+              <div>
+                <h2
+                  class="text-4xl text-slate-900 font-roboto-slab dark:text-slate-50 font-bold relative after:contents[] after:w-36 after:h-[2px] after:bg-primary after:absolute after:top-1/2 -translate-y-1/2 after:right-8 after:left-52">
+                  Resume
+                </h2>
+              </div>
+
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Left side -->
+                <div>
+                  <h3 class="text-3xl dark:text-white font-medium pb-6">
+                    Education
+                  </h3>
+                  <div class="grid grid-cols-1 gap-6">
+                    <div
+                      class="bg-green-50 dark:bg-mid-dark py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2">
+                      <span class="text-sm text-slate-400">2021-2025</span>
+                      <h4 class="text-xl font-medium text-slate-800 dark:text-slate-100">
+                        B.Tech in Computer Science Engineering
+                      </h4>
+                      <p class="text-base font-normal text-slate-700 dark:text-slate-200">
+                        KIIT University, India - 751024
+                      </p>
+                    </div>
+                    <div
+                      class="bg-rose-50 dark:bg-mid-dark py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2">
+                      <span class="text-sm text-slate-400">2018 - 2020</span>
+                      <h4 class="text-xl font-medium text-slate-800 dark:text-slate-100">
+                        Higher Secondary School Certificate
+                      </h4>
+                      <p class="text-base font-normal text-slate-700 dark:text-slate-200">
+                        Dr. Mahbubur Rahman Mollah College, Bangladesh
+                      </p>
+                    </div>
+                    <div
+                      class="bg-indigo-50 dark:bg-mid-dark py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2">
+                      <span class="text-sm text-slate-400">2013 - 2018</span>
+                      <h4 class="text-xl font-medium text-slate-800 dark:text-slate-100">
+                        Secondary School Certificate
+                      </h4>
+                      <p class="text-base font-normal text-slate-700 dark:text-slate-200">
+                        United Islamia Govt. High School, Bangladesh
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Right side -->
+                <div>
+                  <h3 class="text-3xl dark:text-white font-medium pb-6">
+                    Experience
+                  </h3>
+                  <div class="grid grid-cols-1 gap-6">
+                    <div
+                      class="bg-cyan-50 dark:bg-mid-dark py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2">
+                      <span class="text-sm text-slate-400">Sep 2023 - Feb 2024</span>
+                      <h4 class="text-xl font-medium text-slate-800 dark:text-slate-100">
+                        Accreditation & Ticketing Supervisor at ISL & AFC Cup 2023
+                      </h4>
+                      <p class="text-base font-normal text-slate-700 dark:text-slate-200">
+                        Paytm Insider, India
+                      </p>
+                    </div>
+                    <div
+                      class="bg-pink-50 dark:bg-mid-dark py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2">
+                      <span class="text-sm text-slate-400">Dec 2022 - Jan 2023</span>
+                      <h4 class="text-xl font-medium text-slate-800 dark:text-slate-100">
+                        Accreditation Executive at FIH Hockey World Cup 2023
+                      </h4>
+                      <p class="text-base font-normal text-slate-700 dark:text-slate-200">
+                        Paytm Insider, India
+                      </p>
+                    </div>
+                    <div
+                      class="bg-yellow-50 dark:bg-mid-dark py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2">
+                      <span class="text-sm text-slate-400">April 2021 - May 2022</span>
+                      <h4 class="text-xl font-medium text-slate-800 dark:text-slate-100">
+                        Global Operations Intern
+                      </h4>
+                      <p class="text-base font-normal text-slate-700 dark:text-slate-200">
+                        Youth Opportunities Ltd., Bangladesh
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Skills start -->
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-4 lg:pt-12">
+                <div>
+                  <h3 class="text-3xl dark:text-white font-medium pb-8">
+                    Working Skills
+                  </h3>
+                  <div class="pb-8">
+                    <p class="text-slate-500 pb-1 flex justify-between items-center text-base dark:texl-slate-100">
+                      <span>Web Development</span>
+                      <span>80%</span>
+                    </p>
+                    <div
+                      class="w-full h-[3px] bg-slate-300 rounded relative after:contents-[] after:w-[80%] after:h-full after:bg-red-400 after:absolute after:top-0 after:left-0 after:rounded">
+                    </div>
+                  </div>
+                  <div class="pb-8">
+                    <p class="text-slate-500 pb-1 flex justify-between items-center text-base dark:texl-slate-100">
+                      <span>Mobile App Development</span>
+                      <span>55%</span>
+                    </p>
+                    <div
+                      class="w-full h-[3px] bg-slate-300 rounded relative after:contents-[] after:w-[55%] after:h-full after:bg-yellow-400 after:absolute after:top-0 after:left-0 after:rounded">
+                    </div>
+                  </div>
+                  <div class="pb-8">
+                    <p class="text-slate-500 pb-1 flex justify-between items-center text-base dark:texl-slate-100">
+                      <span>Data Analytics and Machine Learning</span>
+                      <span>66%</span>
+                    </p>
+                    <div
+                      class="w-full h-[3px] bg-slate-300 rounded relative after:contents-[] after:w-[66%] after:h-full after:bg-cyan-500 after:absolute after:top-0 after:left-0 after:rounded">
+                    </div>
+                  </div>
+                  <div class="pb-8">
+                    <p class="text-slate-500 pb-1 flex justify-between items-center text-base dark:texl-slate-100">
+                      <span>DevOps and Cloud</span>
+                      <span>75%</span>
+                    </p>
+                    <div
+                      class="w-full h-[3px] bg-slate-300 rounded relative after:contents-[] after:w-[75%] after:h-full after:bg-purple-400 after:absolute after:top-0 after:left-0 after:rounded">
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-3xl dark:text-white font-medium pb-8">
+                    Knowledge
+                  </h3>
+                  <div class="flex flex-wrap gap-4">
+                    <button
+                      class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                      HTML
+                    </button>
+                    <button
+                      class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                      CSS
+                    </button>
+                    <button
+                      class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                      JavaScript
+                    </button>
+                    <button
+                      class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                      C/C++
+                    </button>
+                    <button
+                      class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                      Python
+                    </button>
+                    <button
+                      class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                      Java
+                    </button>
+                    <button
+                      class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                      Data Structures
+                    </button>
+                    <button
+                      class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                      Algorithms
+                    </button>
+                    <button
+                      class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                      OOP
+                    </button>
+                    <button
+                      class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                      Problem Solving
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Skills end -->
+            </div>
+            <div class="dark:bg-black p-6 text-center mt-8 rounded-br-xl rounded-bl-xl">
+              <p class="text-slate-800 dark:text-slate-50">
+                &#169; <span id="year"></span> All Rights Reserved by
+                MUHIT KHAN
+              </p>
+            </div>
+          </div>
+          <!-- Resume tab end ---->
+
+          <!-- Work tab start -->
+          <div class="tab_item hidden bg-slate-50 dark:bg-[#111111] rounded-xl mb-14">
+            <div class="pt-16 px-12 mt-8">
+              <div>
+                <h2
+                  class="text-4xl text-slate-900 font-roboto-slab dark:text-slate-50 font-bold relative after:contents[] after:w-36 after:h-[2px] after:bg-primary after:absolute after:top-1/2 -translate-y-1/2 after:right-8 after:left-52">
+                  Work
+                </h2>
+              </div>
+              <div class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
+                <div
+                  class="bg-indigo-50 p-4 rounded-md border border-slate-200 flex gap-5 dark:border-2 dark:border-[#212425] dark:bg-mid-dark">
+                  <div>
+                    <a href="https://github.com/muhit-khan/Smart-Home-Web-App---Knight-Coders" target="_blank"
+                      class="w-10 h-10 rounded-full bg-light-gray flex items-center justify-center shadow-md hover:hover_active text-[#0b1829] hover:text-slate-50">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <h4 class="dark:text-white text-xl font-semibold">
+                      Smart Home Web
+                    </h4>
+                    <span class="text-sm text-slate-400">Co-developers: Methu, Akash</span>
+                    <p class="text-justify leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                      This React JS based web application designed and developed to control smart home appliances like
+                      fans, air conditioners, RGB LEDs, and bulbs.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="bg-green-50 p-4 rounded-md border border-slate-200 flex gap-5 dark:border-2 dark:border-[#212425] dark:bg-mid-dark">
+                  <div>
+                    <a href="https://github.com/muhit-khan/facemetric-auth" target="_blank"
+                      class="w-10 h-10 rounded-full bg-light-gray flex items-center justify-center shadow-md hover:hover_active text-[#0b1829] hover:text-slate-50">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://hub.docker.com/repository/docker/muhitkhan/facemetric-authentication/general"
+                      target="_blank"
+                      class="mt-6 w-10 h-10 rounded-full bg-light-gray flex items-center justify-center shadow-md hover:hover_active text-[#1773EA] hover:text-slate-50">
+                      <i class="fa-brands fa-docker"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <h4 class="dark:text-white text-xl font-semibold">
+                      Facemetric Authentication
+                    </h4>
+                    <p class="text-justify leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                      AI based Face Recognition model for Web App Authentication. Developed with Python, Flask,
+                      DeepFace, Tensorflow, Docker and deployed on cloud.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="bg-rose-50 p-4 rounded-md border border-slate-200 flex gap-5 dark:border-2 dark:border-[#212425] dark:bg-mid-dark">
+                  <div>
+                    <a href="https://github.com/muhit-khan/NETWORK-ALCHEMIST" target="_blank"
+                      class="w-10 h-10 rounded-full bg-light-gray flex items-center justify-center shadow-md hover:hover_active text-[#0b1829] hover:text-slate-50">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <h4 class="dark:text-white text-xl font-semibold">
+                      Network Alchemist
+                    </h4>
+                    <p class="text-justify leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                      Network Alchemist is a light-weight desktop application designed to streamline network analyzing
+                      and
+                      troubleshooting. It is developed using Python Tkinter for Windows and Linux systems.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="bg-yellow-50 p-4 rounded-md border border-slate-200 flex gap-5 dark:border-2 dark:border-[#212425] dark:bg-mid-dark">
+                  <div>
+                    <a href="https://github.com/muhit-khan/HERO" target="_blank"
+                      class="w-10 h-10 rounded-full bg-light-gray flex items-center justify-center shadow-md hover:hover_active text-[#0b1829] hover:text-slate-50">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <h4 class="dark:text-white text-xl font-semibold">
+                      Hero
+                    </h4>
+                    <p class="text-justify leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                      HERO, a AI Powered Voice Assistant is a Python-based project that allows you to ask queries
+                      directly to the Google Bard for retrieving answers realtime from web.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-10">
+              <a href="https://github.com/muhit-khan"
+                class="inline-block rounded-[60px] bg-gradient-to-r from-[#FA5252] to-[#DD2476] py-3 px-6 text-slate-50">
+                <i class="fa-brands fa-github"></i>
+                See More Works
+              </a>
+            </div>
+
+            <div class="dark:bg-black p-6 text-center mt-8 rounded-br-xl rounded-bl-xl">
+              <p class="text-slate-800 dark:text-slate-50">
+                &#169; <span id="year"></span> All Rights Reserved by
+                MUHIT KHAN
+              </p>
+            </div>
+          </div>
+          <!-- Work tab end ---->
+
+          <!-- Blog tab start -->
+          <div class="tab_item hidden bg-slate-50 dark:bg-[#111111] rounded-xl mb-14">
+            <div class="pt-16 px-12 mt-8">
+              <div>
+                <h2
+                  class="text-4xl text-slate-900 font-roboto-slab dark:text-slate-50 font-bold relative after:contents[] after:w-36 after:h-[2px] after:bg-primary after:absolute after:top-1/2 -translate-y-1/2 after:right-8 after:left-52">
+                  Blog
+                </h2>
+              </div>
+            </div>
+            <div class="dark:bg-mid-black p-6 text-center mt-8 rounded-br-xl rounded-bl-xl">
+              <p class="italic text-xl font-bold dark:text-slate-50"> Attention! </p>
+              <p class="italic text-xl font-semibold dark:text-slate-50">Switch to the newly opened tab of
+                your browser. </p>
+            </div>
+            <div class="dark:bg-black p-6 text-center mt-8 rounded-br-xl rounded-bl-xl">
+              <p class="text-slate-800 dark:text-slate-50">
+                &#169; <span id="year"></span> All Rights Reserved by
+                MUHIT KHAN
+              </p>
+            </div>
+          </div>
+          <!-- Blog tab end ---->
+
+          <!-- Contact tab start -->
+          <div class="tab_item hidden bg-slate-50 dark:bg-[#111111] rounded-xl mb-14">
+            <div class="pt-16 px-12 mt-8">
+              <div>
+                <h2
+                  class="text-4xl text-slate-900 font-roboto-slab dark:text-slate-50 font-bold relative after:contents[] after:w-36 after:h-[2px] after:bg-primary after:absolute after:top-1/2 -translate-y-1/2 after:right-8 after:left-52">
+                  Contact
+                </h2>
+              </div>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="flex gap-4">
+                  <div>
+                    <img src="./images/phone-call-1.png" alt="image">
+                  </div>
+                  <div>
+                    <h3 class="pb-2 text-xl font-semibold dark:text-white">Phone</h3>
+                    <p class="inline-flex flex-col gap-1">
+                      <a class="text-gray-lite text-lg dark:text-[#A6A6A6] " href="tel:+8801632436671">+880 1632
+                        436671</a>
+                      <a class="text-gray-lite text-lg dark:text-[#A6A6A6] " href="tel:+917894978567">+91 789 497
+                        8567</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div>
+                    <img src="./images/email-1.png" alt="image">
+                  </div>
+                  <div>
+                    <h3 class="pb-2 text-xl font-semibold dark:text-white">Email</h3>
+                    <p class="inline-flex flex-col gap-1">
+                      <a class="text-gray-lite text-lg dark:text-[#A6A6A6] "
+                        href="mailto:mailto:muhitkhan_bd@outlook.com">muhitkhan_bd@outlook.com</a>
+                      <a class="text-gray-lite text-lg dark:text-[#A6A6A6] "
+                        href="mailto:muhit.dev@gmail.com">muhit.dev@gmail.com</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Contact Form start -->
+              <div class="pt-6 lg:pt-20">
+                <p class="text-2xl text-slate-700 dark:text-slate-100">
+                  I'm always open for discussing Product
+                </p>
+                <p class="text-2xl text-slate-900 dark:text-slate-100 font-medium">
+                  Development work or Partnerships.
+                </p>
+                <form id="myForm">
+                  <div class="relative z-0 w-full mt-[40px] mb-8 group">
+                    <input type="text" name="name"
+                      class="block autofill:bg-transparent py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#FF6464] peer"
+                      placeholder=" " required="" /><label for="name"
+                      class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-color-910 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#FF6464] peer-focus:dark:text-[#FF6464] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8">Name
+                      *</label>
+                  </div>
+                  <div class="relative z-0 w-full mb-8 group">
+                    <input type="email" name="user_email"
+                      class="block autofill:text-red-900 needed py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#5185D4] peer"
+                      placeholder=" " id="user_email" required="" /><label for="user_email"
+                      class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-color-910 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#5185D4] peer-focus:dark:text-[#FF6464] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8">Email
+                      *</label>
+                  </div>
+                  <div class="relative z-0 w-full mb-8 group">
+                    <input type="text" name="message"
+                      class="block autofill:bg-yellow-200 py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#CA56F2] peer"
+                      placeholder=" " id="message" required="" /><label for="message"
+                      class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-color-910 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#CA56F2] peer-focus:dark:text-[#FF6464] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8">Message
+                      *</label>
+                  </div>
+                  <div
+                    class="transition-all duration-300 ease-in-out inline-block hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] rounded-lg mt-3">
+                    <input type="submit"
+                      class="transition ease-in duration-200 font-semibold cursor-pointer border-color-910 hover:border-transparent px-6 py-2 rounded-lg border-[2px] hover:text-white dark:text-white"
+                      value="Submit" />
+                  </div>
+                </form>
+              </div>
+              <!-- Contact Form end -->
+            </div>
+            <div class="dark:bg-black p-6 text-center mt-8 rounded-br-xl rounded-bl-xl">
+              <p class="text-slate-800 dark:text-slate-50">
+                &#169; <span id="year"></span> All Rights Reserved by
+                MUHIT KHAN
+              </p>
+            </div>
+          </div>
+          <!-- Contact tab end ---->
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Side bar end -->
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
