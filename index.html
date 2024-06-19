@@ -881,9 +881,9 @@
                                         .then(response => response.json())
                                         .then(result => {
                                             if (result.success) {
-                                                formMessage.innerHTML = '<p class=" text-green-500">Message set successfully!</p>';
+                                                formMessage.innerHTML = '<p class="dark:text-white text-green-500">Message set successfully!</p>';
                                             } else {
-                                                formMessage.innerHTML = '<p class="text-red-500">There was an error in sending message. Please try again.</p>';
+                                                formMessage.innerHTML = '<p class="dark:text-white text-red-500">There was an error in sending message. Please try again.</p>';
                                             }
                                         })
                                         .catch(error => {
