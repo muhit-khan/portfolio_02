@@ -819,7 +819,8 @@
                                 <p class="text-2xl text-slate-900 dark:text-slate-100 font-medium">
                                     Development work or Partnerships.
                                 </p>
-                                <form id="myForm">
+                                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                                    <input type="hidden" name="access_key" value="3e1b8e6f-a9eb-41b8-970a-eaeea7d37cc3">
                                     <div class="relative z-0 w-full mt-[40px] mb-8 group">
                                         <input type="text" name="name"
                                             class="block autofill:bg-transparent py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#FF6464] peer"
@@ -828,10 +829,17 @@
                                             *</label>
                                     </div>
                                     <div class="relative z-0 w-full mb-8 group">
-                                        <input type="email" name="user_email"
+                                        <input type="email" name="email"
                                             class="block autofill:text-red-900 needed py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#5185D4] peer"
                                             placeholder=" " id="user_email" required="" /><label for="user_email"
                                             class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-color-910 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#5185D4] peer-focus:dark:text-[#FF6464] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8">Email
+                                            *</label>
+                                    </div>
+                                    <div class="relative z-0 w-full mb-8 group">
+                                        <input type="phone" name="phone"
+                                            class="block autofill:text-red-900 needed py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#5185D4] peer"
+                                            placeholder=" " id="user_phone" required="" /><label for="user_phone"
+                                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-color-910 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#5185D4] peer-focus:dark:text-[#FF6464] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8">Phone
                                             *</label>
                                     </div>
                                     <div class="relative z-0 w-full mb-8 group">
@@ -848,8 +856,45 @@
                                             value="Submit" />
                                     </div>
                                 </form>
+                                <div class="mb-8"></div>
+                                <div id="formMessage" class="mt-4"></div>
                             </div>
                             <!-- Contact Form end -->
+                            <!-- Contact Form Script Starts -->
+                            <script>
+                                document.getElementById('contactForm').addEventListener('submit', function (event) {
+                                    event.preventDefault(); // Prevent the default form submission
+
+                                    const formMessage = document.getElementById('formMessage');
+                                    formMessage.innerHTML = ''; // Clear any previous messages
+
+                                    const formData = new FormData(this);
+                                    const data = Object.fromEntries(formData.entries());
+
+                                    fetch('https://api.web3forms.com/submit', {
+                                        method: 'POST',
+                                        headers: {
+                                            'Content-Type': 'application/json'
+                                        },
+                                        body: JSON.stringify(data)
+                                    })
+                                        .then(response => response.json())
+                                        .then(result => {
+                                            if (result.success) {
+                                                formMessage.innerHTML = '<p class=" text-green-500">Message set successfully!</p>';
+                                            } else {
+                                                formMessage.innerHTML = '<p class="text-red-500">There was an error in sending message. Please try again.</p>';
+                                            }
+                                        })
+                                        .catch(error => {
+                                            console.error('Error:', error);
+                                            formMessage.innerHTML = '<p class="text-red-500">There was an error submitting the form. Please try again.</p>';
+                                        });
+                                });
+                            </script>
+                            <!-- Contact Form Script End -->
+
+
                         </div>
                         <div class="dark:bg-black p-6 text-center mt-8 rounded-br-xl rounded-bl-xl">
                             <p class="text-slate-800 dark:text-slate-50">
